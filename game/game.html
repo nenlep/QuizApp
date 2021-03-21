@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizApp - Play</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/game/game.css">
+</head>
+<body>
+  <div class="container">
+    <div id="loader"></div>
+    <div id="game" class="flex-center flex-column hidden">
+      <div id="game-hud">
+        <div id="hud-item">
+          <h2 id="hud-title">Question</h2>
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+        <div id="hud-item">
+          <h2 id="hud-title">Score</h2>
+          <div id="score">0</div>
+        </div>
+      </div>
+      <p id="question"></p>
+      <div id="choices">
+        <div class="choice-letter">A</div>
+        <div class="choice-text" data-number="1"></div>
+      </div>
+      <div id="choices">
+        <div class="choice-letter">B</div>
+        <div class="choice-text" data-number="2"></div>
+      </div>
+      <div id="choices">
+        <div class="choice-letter">C</div>
+        <div class="choice-text" data-number="3"></div>
+      </div>
+      <div id="choices">
+        <div class="choice-letter">D</div>
+        <div class="choice-text" data-number="4"></div>
+      </div>
+    </div>
+  </div>
+  <script src="/game/game.js"></script>
+</body>
+</html>
